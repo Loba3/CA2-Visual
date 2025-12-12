@@ -1,0 +1,243 @@
+/* ============================
+   NAVBAR STYLING
+   ============================ */
+
+.navbar {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Light mode navbar */
+[data-bs-theme="light"] .navbar {
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* Dark mode navbar */
+[data-bs-theme="dark"] .navbar {
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Navbar text */
+.navbar-brand {
+  font-size: 1.25rem;
+}
+
+.nav-link {
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+/* Active link */
+.nav-link.active {
+  font-weight: 600;
+  position: relative;
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background-color: #0d6efd;
+}
+
+
+/* ============================
+   HERO SECTION
+   ============================ */
+
+header {
+  padding-top: 4rem;
+}
+
+header .badge {
+  font-size: 0.9rem;
+}
+
+header h1 {
+  letter-spacing: -0.02em;
+}
+
+
+/* ============================
+   SECTION HEADINGS
+   ============================ */
+section h2 {
+  letter-spacing: -0.02em;
+}
+
+
+/* CARD STYLING */
+
+.card {
+  border-radius: 0.75rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Dark mode cards */
+[data-bs-theme="dark"] .card {
+  background-color: #1e1e1e;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: none;
+}
+
+
+/*EDUCATION*/
+.accordion-button {
+  font-weight: 500;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: rgba(13, 110, 253, 0.08);
+  color: #0d6efd;
+}
+
+/* Dark mode accordion */
+[data-bs-theme="dark"] .accordion-button:not(.collapsed) {
+  background-color: rgba(13, 110, 253, 0.2);
+  color: #9ec5fe;
+}
+
+.accordion-item {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+
+/* ============================
+   LISTS & BADGES
+   ============================ */
+
+ul {
+  padding-left: 1.2rem;
+}
+
+li {
+  margin-bottom: 0.35rem;
+}
+
+.badge {
+  font-weight: 500;
+}
+
+
+/* ============================
+   LINKS
+   ============================ */
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* ============================
+   DARK MODE 
+   ============================ */
+
+[data-bs-theme="dark"] {
+  color-scheme: dark;
+}
+
+[data-bs-theme="dark"] body {
+  background-color: #121212;
+}
+
+[data-bs-theme="dark"] a {
+  color: #9ec5fe;
+}
+
+[data-bs-theme="dark"] a:hover {
+  color: #cfe2ff;
+}
+
+/* ============================
+   SECTION PANELS
+   ============================ */
+
+section {
+  background-color: #ffffff;
+  border-radius: 1.25rem;
+  padding: 3rem 2rem;
+}
+
+[data-bs-theme="dark"] section {
+  background-color: #181818;
+}
+
+section {
+  margin-bottom: 5rem;
+}
+
+
+[data-bs-theme="dark"] #education .accordion {
+  background-color: #1f1f1f;
+}
+
+#projects .card {
+  border: none;
+  border-radius: 1rem;
+}
+
+#projects .card:hover {
+  transform: translateY(-6px);
+}
+
+#about p {
+  line-height: 1.7;
+  color: #495057;
+}
+
+[data-bs-theme="dark"] #about p {
+  color: #dee2e6;
+}
+
+/* ============================
+   COMPANY LOGOS (EXPERIENCE)
+   ============================ */
+
+.company-logo {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  border-radius: 0.5rem;
+  flex-shrink: 0;
+  background-color: #ffffff;
+  padding: 6px;
+}
+
+/* Dark mode logo background */
+[data-bs-theme="dark"] .company-logo {
+  background-color: #1e1e1e;
+}
+
+/* ============================
+   HERO IMAGE
+   ============================ */
+
+.hero-img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 1.5rem;
+  object-fit: cover;
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Dark mode shadow */
+[data-bs-theme="dark"] .hero-img {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
