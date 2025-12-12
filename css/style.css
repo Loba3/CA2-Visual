@@ -8,18 +8,6 @@
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Light mode navbar */
-[data-bs-theme="light"] .navbar {
-  background-color: rgba(255, 255, 255, 0.95);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-}
-
-/* Dark mode navbar */
-[data-bs-theme="dark"] .navbar {
-  background-color: rgba(0, 0, 0, 0.9);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-}
-
 /* Navbar text */
 .navbar-brand {
   font-size: 1.25rem;
@@ -70,7 +58,6 @@ header h1 {
 section h2 {
   letter-spacing: -0.02em;
 }
-
 
 /* CARD STYLING */
 
@@ -224,20 +211,3 @@ section {
   background-color: #1e1e1e;
 }
 
-/* ============================
-   HERO IMAGE
-   ============================ */
-
-.hero-img {
-  width: 100%;
-  max-width: 320px;
-  border-radius: 1.5rem;
-  object-fit: cover;
-
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-}
-
-/* Dark mode shadow */
-[data-bs-theme="dark"] .hero-img {
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
-}
